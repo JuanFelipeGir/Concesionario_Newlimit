@@ -49,9 +49,6 @@ const Home = () => {
                     <Text style={styleHome.text}>Ruedas como nunca antes</Text>
                     
                     <View style={styleHome.buttonContainer}>
-                        <TouchableOpacity style={styleHome.button} onPress={handleCatalog}>
-                            <Text style={styleHome.buttonText}> Catalog </Text>
-                        </TouchableOpacity>
                         <TouchableOpacity style={styleHome.button} onPress={handleDrivingTestRequest}>
                             <Text style={styleHome.buttonText}> Driving Test Request </Text>
                         </TouchableOpacity>

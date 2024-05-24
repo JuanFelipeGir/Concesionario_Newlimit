@@ -62,13 +62,16 @@ const WorkShopService = () => {
         .required('Name is required'),
         surname: Yup.string()
         .required('Surname is required'),
-        dni: Yup.number()
+        dni: Yup.string()
+        .matches(/^[0-9]+$/, "Must be only digits")
         .required('DNI is required')
         .max(10,"dni should not be more than 10 digits"),
-        cellphone: Yup.number()
+        cellphone: Yup.string()
+        .matches(/^[0-9]+$/, "Must be only digits")
         .required('Cellphone is required')
         .max(10,"Cellphone should not be mor than 10 digits"),
-        license: Yup.number()
+        license: Yup.string()
+        .matches(/^[0-9]+$/, "Must be only digits")
         .required('license is required')
         .max(11,"License should not be more than 11 digits")
     });
